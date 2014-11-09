@@ -56,7 +56,6 @@ MicrophoneSample.prototype.emoticonEyeMap = [
 
 MicrophoneSample.prototype.emoticonMouthMap = [
   "‿",
-  "﹏ु",
   "ᚂ",
   "☋",
   "☄",
