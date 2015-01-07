@@ -97,62 +97,55 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-a {
-  color: hsl(272, 0%, 0%);
-}
-
 body {
   background: hsl(272, 80%, 80%);
   color: hsla(272, 0%, 0%, 0.75);
   font: 24px/1.5em monospace;
 }
 
-.body-container {
+a {
+  color: hsl(272, 0%, 0%);
 }
 
-
-.glyphs-container {
+.glyphs {
   display: block;
   height: 150px;
   margin: 100px auto;
+  position: relative;
+  text-align: center;
   width: 300px;
 }
 
-  .glyphs {
-    position: relative;
-    text-align: center;
+  .glyph {
+    font-size: 100px;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    width: 100px;
   }
 
-    .glyph {
-      font-size: 100px;
-      height: 100px;
-      line-height: 100px;
-      position: absolute;
-      top: 0;
-      width: 100px;
+    .glyph--eye-left {
+      left: 0;
     }
 
-      .glyph--eye-left {
-        left: 0;
-      }
+    .glyph--mouth {
+      left: 100px;
+      top: 50px;
+    }
 
-      .glyph--mouth {
-        left: 100px;
-        top: 50px;
-      }
+    .glyph--eye-right {
+      left: 200px;
+    }
 
-      .glyph--eye-right {
-        left: 200px;
-      }
-
-.copy-container {
+.copy {
   display: block;
   margin: 50px auto;
   max-width: 650px;
   width: 85%;
 }
 
-  .copy-container p {
+  .copy p {
     margin: 0;
     text-align: justify;
   }
