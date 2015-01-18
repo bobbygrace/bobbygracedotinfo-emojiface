@@ -3,6 +3,7 @@ concat = require "gulp-concat"
 rename = require "gulp-rename"
 minifyHTML = require "gulp-minify-html"
 minifyCSS = require "gulp-minify-css"
+uncss = require "gulp-uncss"
 uglify = require "gulp-uglify"
 
 
@@ -20,7 +21,6 @@ gulp.task "html", ->
 
 
 # CSS
-# Order matters here
 
 gulpCssSrc = [
   "src/css/normalize.css"
@@ -32,6 +32,7 @@ gulp.task "css", ->
   gulp
     .src gulpCssSrc
     .pipe concat("all.css")
+    .pipe uncss({ html: ["./public/index.html"] })
     .pipe gulp.dest("./public/css")
     .pipe minifyCSS()
     .pipe rename("all.min.css")
@@ -39,7 +40,6 @@ gulp.task "css", ->
 
 
 # JS
-# Order matters here, too
 
 gulpJsSrc = [
   "src/js/vendor/jquery-2.1.0.min.js"
