@@ -335,13 +335,23 @@ html {
    ========================================================================== */
 
 body {
-  background: hsl(272, 80%, 80%);
-  color: hsla(272, 0%, 0%, 0.75);
-  font: 24px/1.5em monospace;
+  background: hsl(280, 100%, 45%);
+  color: #fff;
+  font-size: 22px;
+  font-family: monospace;
 }
 
 a {
-  color: hsl(272, 0%, 0%);
+  color: hsl(280, 100%, 95%);
+}
+
+a:hover,
+a:visited:hover {
+  color: #fff;
+}
+
+a:visited {
+  color: hsl(280, 100%, 75%);
 }
 
 .glyphs {
@@ -379,12 +389,8 @@ a {
   display: block;
   margin: 50px auto;
   max-width: 650px;
-  width: 85%;
-}
-
-.copy p {
-  margin: 0;
   text-align: justify;
+  width: 85%;
 }
 
 /* ==========================================================================
